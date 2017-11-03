@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+	<title>Raising kids with code - WordCamp US 2017</title>
+
+	<meta name="description" content="As a parent, an educator, and a professional developer, I’ve given coding a central place in my children’s curriculum. Through games, Minecraft mods, and WordPress plugins, and more, they’re learning the basics of programming, site administration, and even entrepreneurialism. They’re not ready to take over my job (yet), but they have a great head start toward a future where programming skills pervade nearly every career. Let’s take a look at some of the approaches, tools, and communities available to us as parents and educators. Our children will grow up to face a new kind of digital economy. We can help them learn the skills they need to thrive.">
+	<meta name="author" content="Jonathan Brinley">
+
+
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/sky.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+
+	<style type="text/css">
+		.reveal .footer {
+			position: fixed;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			font-size: 16px;
+			white-space: nowrap;
+			z-index: 2;
+			color: #eee;
+			background-color: rgba(0, 0, 0, 0.5);
+			padding: 0.1em 1.5em 0.2em 2em;
+			text-align: center;
+		}
+		.reveal .footer a {
+			color: #eee;
+		}
+		.reveal .footer p {
+			margin: 0;
+		}
+		.reveal .slides img {
+			border: none;
+		}
+
+		.reveal .slides img.bare {
+			background: none;
+			box-shadow: none;
+		}
+
+		.reveal figcaption cite {
+			font-size: 40%;
+		}
+
+		.reveal code {
+			text-transform: none;
+		}
+
+		section.boxed {
+			background-color: rgba(0,0,0,0.5);
+			color: #eee;
+		}
+
+		section.boxed h1,
+		section.boxed h2,
+		section.boxed h3,
+		section.boxed h4,
+		section.boxed a {
+			color: #eee;
+		}
+
+		.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5,
+		.reveal h6 {
+			text-transform: none;
+		}
+
+		.reveal h1 {
+			font-size: 3em;
+		}
+
+		.reveal h2 {
+			font-size: 1.75em;
+		}
+
+		figcaption cite,
+		figcaption cite a,
+		.boxed figcaption cite a {
+			color: #888;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="reveal">
+	<div class="footer">
+		<p>Jonathan Brinley
+			• <a href="http://twitter.com/jbrinley">@jbrinley</a>
+			• <a href="https://twitter.com/hashtag/wcus">#wcus</a>
+			• Slides: <a href="http://flightless.us/slides/wcus-2017/">flightless.us/wcus2017</a>
+		</p>
+	</div>
+
+	<div class="slides">
+		<section class="boxed" data-state="front" data-background-image="">
+			<h1 style="font-size: 2em;clear:none;text-transform:none">Raising kids with<br /><code>&lt;code&gt;</code></h1>
+		</section>
+
+		<section>
+			<h1>Programming<br />is<br />Problem Solving</h1>
+		</section>
+
+		<section data-background-image="images/EVOO-mobile.gif"></section>
+
+		<section class="">
+			<blockquote>Knowing programming is as fundamental as knowing English, math,
+				history, and science. It’s part of our modern toolkit for communication
+				and problem solving.</blockquote>
+		</section>
+
+		<section data-background-image="images/lightbot.png" data-background-size="contain">
+			<h1>Lightbot</h1>
+		</section>
+
+		<section data-background-image="images/boxisland.png" data-background-size="contain">
+			<h1>Box Island</h1>
+		</section>
+
+		<section data-background-image="images/code.org.png" data-background-size="contain">
+			<h1>Code.org</h1>
+		</section>
+
+		<section data-background-image="images/robotturtles.png" data-background-size="contain">
+			<h1>Robot Turtles</h1>
+		</section>
+
+		<section data-background-video="images/quicksort.mp4" data-background-size="contain" data-background-video-loop="true" data-background-video-muted="true">
+			<figure><figcaption>Quick-Sort with Hungarian folk dance<br />https://youtu.be/ywWBy6J5gz8</figcaption></figure>
+		</section>
+
+		<section>
+			<h2>Jonathan Brinley</h2>
+			<p>@jbrinley • jonathan@tri.be</p>
+			<p><img class="bare" width="1000" height="140" data-src="images/tribe-logo-color.png" alt="Modern Tribe" /></p>
+		</section>
+
+
+	</div>
+
+</div>
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+
+<script>
+	// More info about config & dependencies:
+	// - https://github.com/hakimel/reveal.js#configuration
+	// - https://github.com/hakimel/reveal.js#dependencies
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: false,
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+		dependencies: [
+			{ src: 'reveal.js/plugin/markdown/marked.js' },
+			{ src: 'reveal.js/plugin/markdown/markdown.js' },
+			{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+			{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+		]
+	});
+</script>
+
+</body>
+</html>

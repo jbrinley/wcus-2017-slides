@@ -13,7 +13,7 @@
 
 
 	<link rel="stylesheet" href="reveal.js/css/reveal.css">
-	<link rel="stylesheet" href="reveal.js/css/theme/sky.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/moon.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
@@ -52,7 +52,11 @@
 			border: none;
 		}
 
-		.reveal .slides img.bare {
+		.reveal, .reveal a {
+			color: #eee8d5;
+		}
+
+		/*.reveal .slides img.bare {
 			background: none;
 			box-shadow: none;
 		}
@@ -62,28 +66,6 @@
 		}
 
 		.reveal code {
-			text-transform: none;
-		}
-
-		section.boxed {
-			background-color: rgba(0,0,0,0.5);
-			color: #eee;
-		}
-
-		section.boxed h1,
-		section.boxed h2,
-		section.boxed h3,
-		section.boxed h4,
-		section.boxed a {
-			color: #eee;
-		}
-
-		.reveal h1,
-		.reveal h2,
-		.reveal h3,
-		.reveal h4,
-		.reveal h5,
-		.reveal h6 {
 			text-transform: none;
 		}
 
@@ -99,6 +81,47 @@
 		figcaption cite a,
 		.boxed figcaption cite a {
 			color: #888;
+		}*/
+
+
+		.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5,
+		.reveal h6 {
+			text-transform: none;
+		}
+
+		section.boxed {
+			background-color: rgba(0,0,0,0.5);
+			color: #f4eedb;
+		}
+
+		section.boxed h1,
+		section.boxed h2,
+		section.boxed h3,
+		section.boxed h4,
+		section.boxed a {
+			color: #f4eedb;
+		}
+
+		.reveal section img {
+			background: none;
+			box-shadow: none;
+		}
+
+		.reveal blockquote {
+			box-shadow: none;
+			background: none;
+		}
+
+		.reveal cite {
+			font-size: 50%;
+		}
+
+		blockquote cite::before {
+			content: "—";
 		}
 	</style>
 </head>
@@ -115,12 +138,24 @@
 	</div>
 
 	<div class="slides">
-		<section class="boxed" data-state="front" data-background-image="">
-			<h1 style="font-size: 2em;clear:none;text-transform:none">Raising kids with<br /><code>&lt;code&gt;</code></h1>
+		<section class="" data-state="front" data-background-image="">
+			<h1 style="font-size: 3em;">Raising kids with<br /><code>&lt;code&gt;</code></h1>
+			<p>WordCamp US</p>
+			<p>2017-12-02</p>
+			<p>Jonathan Brinley</p>
 		</section>
 
 		<section>
 			<h1>Programming<br />is<br />Problem Solving</h1>
+		</section>
+
+		<section>
+			<blockquote>
+				<p>We are now entering the fourth industrial revolution, led
+				by the convergence of software, artificial intelligence, and the Internet
+				of Things—everything in our lives is software-driven.</p>
+				<p><cite>Julien Barbier, CEO of Holberton School of Software Engineering</cite></p>
+			</blockquote>
 		</section>
 
 		<section data-background-image="images/EVOO-mobile.gif"></section>
@@ -131,30 +166,177 @@
 				and problem solving.</blockquote>
 		</section>
 
-		<section data-background-image="images/lightbot.png" data-background-size="contain">
-			<h1>Lightbot</h1>
-		</section>
-
-		<section data-background-image="images/boxisland.png" data-background-size="contain">
-			<h1>Box Island</h1>
-		</section>
-
-		<section data-background-image="images/code.org.png" data-background-size="contain">
-			<h1>Code.org</h1>
-		</section>
-
-		<section data-background-image="images/robotturtles.png" data-background-size="contain">
-			<h1>Robot Turtles</h1>
-		</section>
-
-		<section data-background-video="images/quicksort.mp4" data-background-size="contain" data-background-video-loop="true" data-background-video-muted="true">
-			<figure><figcaption>Quick-Sort with Hungarian folk dance<br />https://youtu.be/ywWBy6J5gz8</figcaption></figure>
+		<section data-background-image="" data-background-size="contain">
+			<h1>Getting Started</h1>
+			<p>Apps & Games</p>
+			<p>Ages 4 – 8</p>
 		</section>
 
 		<section>
-			<h2>Jonathan Brinley</h2>
+			<figure>
+				<figcaption>Lightbot</figcaption>
+				<img class="" data-src="images/lightbot.png" alt="screenshot from Lightbot" />
+			</figure>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>Box Island</figcaption>
+				<img class="" data-src="images/boxisland.png" alt="screenshot from Box Island" />
+			</figure>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>Code.org</figcaption>
+				<img class="" data-src="images/code.org.png" alt="screenshot from Code.org" />
+			</figure>
+		</section>
+
+		<section data-background-image="" data-background-size="contain">
+			<h1>Go Analog</h1>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>Snap Circuits</figcaption>
+				<img class="stretch" data-src="images/snapcircuits.png" alt="Snap Circuits" />
+			</figure>
+		</section>
+
+		<section data-background-image="images/dissection.png" data-background-size="contain" class="boxed">
+			<blockquote>
+				<p>People who are more than casually interested in computers should have at least
+					some idea of what the underlying hardware is like. Otherwise the programs they
+					write will be pretty weird.</p>
+				<p><cite>Donald Knuth</cite></p>
+			</blockquote>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>Robot Turtles</figcaption>
+				<img class="" data-src="images/robotturtles.png" alt="photograph of Robot Turtles board and cards" />
+			</figure>
+		</section>
+
+		<section data-transition="none" data-background-video="images/quicksort.mp4" data-background-size="contain" data-background-video-loop="true" data-background-video-muted="true">
+			<figure>
+				<figcaption style="position: fixed; top: 0.5em; left: 0; right: 0;">Quick-Sort with Hungarian folk dance</figcaption>
+				<figcaption style="position: fixed; bottom: 0.5em; left: 0; right: 0; font-size: 50%;">https://youtu.be/ywWBy6J5gz8</figcaption>
+			</figure>
+		</section>
+
+
+		<section data-background-image="" data-background-size="contain">
+			<h1>Level 2</h1>
+			<p>Don't just play games. Make games.</p>
+			<p>Ages 8+</p>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>Swift Playgrounds</figcaption>
+				<img class="" data-src="images/swiftplaygrounds.jpg" alt="screenshot of Swift Playgrounds on an iPad" />
+			</figure>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>CodeCombat</figcaption>
+				<img class="" data-src="images/codecombat.png" alt="screenshot of CodeCombat" />
+			</figure>
+		</section>
+
+		<section data-transition="none" data-background-video="images/scratch-game.mp4" data-background-size="contain" data-background-video-loop="true" data-background-video-muted="true">
+			<figure>
+				<figcaption style="position: fixed; bottom: 0.5em; left: 0; right: 0; font-size: 50%;">https://scratch.mit.edu/projects/184134427/</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<figure>
+				<figcaption>ScriptCraft</figcaption>
+				<img class="" data-src="images/skyscraper.png" alt="screenshot of a skyscraper in MineCraft" />
+			</figure>
+		</section>
+
+		<section data-background-image="images/pythonminecraft.png" data-background-size="contain">
+		</section>
+
+		<section>
+			<h1>Learning is hard</h1>
+			<ul>
+				<li>Spaced practice</li>
+				<li>Interleaving</li>
+				<li>Elaboration</li>
+				<li>Generation</li>
+				<li>Reflection</li>
+				<li>Calibration</li>
+			</ul>
+			<p><em>Make it stick : the science of successful learning</em><br /><cite>Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel</cite></p>
+		</section>
+
+		<section data-background-image="images/bookreport.png" data-background-size="contain">
+		</section>
+
+		<section data-transition="none" data-background-image="images/wcjax.jpg" data-background-size="contain">
+			<figure><figcaption style="position: fixed; bottom: 1em; left: 0; right: 0;">WordCamp Jacksonville</figcaption></figure>
+		</section>
+
+		<section>
+			<blockquote><p>Weeks of coding can<br />save you hours of planning.</p></blockquote>
+		</section>
+
+		<section>
+			<blockquote><p>The collective noun for a group of<br />programmers is a merge-conflict.</p></blockquote>
+		</section>
+
+		<section data-background-image="images/gochipkidd.jpg" data-background-size="contain">
+		</section>
+
+		<section>
+			<figure>
+				<img class="" data-src="images/thetacreative.png" alt="screenshot of the store on thetacreative.com" />
+				<figcaption><a href="https://thetacreative.com/">https://thetacreative.com/</a></figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<blockquote>
+				<p>Our society expects that everyone should learn to write, even though very
+					few become professional writers. Similarly, I think that everyone should
+					learn how to program, even though very few will become professional programmers.</p>
+				<p><cite>Mitchel Resnick</cite></p>
+			</blockquote>
+		</section>
+
+		<section>
+			<h2>Online Classes</h2>
+			<ul>
+				<li>Khan Academy</li>
+				<li>Codecademy</li>
+				<li>Free Code Camp</li>
+				<li>Code School</li>
+				<li>Treehouse</li>
+				<li>Lynda.com</li>
+				<li>Udemy</li>
+			</ul>
+		</section>
+
+		<section>
+			<blockquote>
+				<p>Most good programmers do programming not because they expect to get paid
+					or get adulation by the public, but because it is fun to program.</p>
+				<p><cite>Linus Torvalds</cite></p>
+			</blockquote>
+		</section>
+
+		<section>
+			<p>Slides and resources: http://flightless.us/wcus2017/</p>
+			<h2 style="margin-top:1em;">Jonathan Brinley</h2>
 			<p>@jbrinley • jonathan@tri.be</p>
-			<p><img class="bare" width="1000" height="140" data-src="images/tribe-logo-color.png" alt="Modern Tribe" /></p>
+			<p><img style="padding: 32px;" data-src="images/tribe-logo-color-eee8d5lettering.png" alt="Modern Tribe" /></p>
 		</section>
 
 
@@ -173,7 +355,7 @@
 		controls: true,
 		progress: true,
 		history: true,
-		center: false,
+		center: true,
 		transition: 'slide', // none/fade/slide/convex/concave/zoom
 		dependencies: [
 			{ src: 'reveal.js/plugin/markdown/marked.js' },
